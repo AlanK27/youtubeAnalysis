@@ -1,0 +1,14 @@
+get          2019.4.13
+pip          19.0.3
+post         2019.4.13
+public       2019.4.13
+pytz         2020.1
+query-string 2019.4.13
+request      2019.4.13
+setuptools   40.8.0
+numpy        1.16.4
+pandas       0.24.2
+matplotlib   3.2.1
+scikit-learn 0.21.2
+scipy        1.4.1
+seaborn      0.9.0
