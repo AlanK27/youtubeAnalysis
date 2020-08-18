@@ -2,6 +2,7 @@ import json
 import pandas as pd
 import os
 
+
 class stats:
 
 
@@ -33,21 +34,5 @@ class stats:
 
 
 print(os.getcwd())
-
-# file_path = os.getcwd() + '\\yt_main\\data\\only_in_japan__go\\only_in_japan__go.json'
-
-# x = stats(path = file_path)
-# x.load()
-# x.statistics()
-# x.print_stats()
-
-
-    # from datetime import datetime
-    # d1 = datetime.strptime('2020-06-05T04:01:49Z',"%Y-%m-%dT%H:%M:%SZ")
-
-
-
-
-
 
 

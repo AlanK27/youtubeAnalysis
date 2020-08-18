@@ -9,10 +9,21 @@ from yt_anaytics.yt.yt_spider.build_yt import yt_api
 from yt_anaytics.yt.yt_spider.vid_list_to_data import vid_to_data
 
 
-oij_channel = 'UCDsvL48jluG3tvlyurB4K3g'
+def start(user_id=None, chan_id=None, pages= None):
 
-
-def start(user_id=None, chan_id=None, pages= 12):
+    check = 0
+    while check == 0:
+        print('50 results/vidoes per page, max is 600 pages.')
+        pages = input('How many pages would you like?')
+        if (pages.isnumeric()):
+            if (int(pages) >=1) & (int(pages) < 12):
+                print(f'Getting {pages} pages')
+                check = 1
+                pages = int(pages)
+            else:
+                print('Incorrect input')
+        else:
+            print('Incorrect input')
 
     with open(os.path.abspath('..')+'\\key.txt', 'r') as rf:
         api_key = rf.read()
@@ -24,7 +35,6 @@ def start(user_id=None, chan_id=None, pages= 12):
 
     # create directory
     title, data_path = data_directory(chan_info)
-
 
     # create channel info json
     info_file_dir = yt_pi.js_dump(j_file = chan_info, dir=data_path,  name=title)
@@ -113,11 +123,6 @@ def data_to_csv(list_of_vid_dir, data_path, title, yt_pi):
         vid_data = vid_to_data()
         video_data = vid_data.get_stats(vid_info)
         parse_csv(csv_path, video_data)
-
-
-if __name__ =='__main__':
-    start(chan_id= oij_channel)
-
 
 
 

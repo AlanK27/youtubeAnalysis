@@ -116,13 +116,5 @@ class vid_to_data:
                     'altitude'
                 ]
 
-    # tags
-    # data['items'][0]['snippet']['tags']
-
-
-
-
-
-
 
 
