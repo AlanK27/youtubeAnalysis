@@ -11,5 +11,5 @@ Multiple features can be drawn from the API such as:
 1. subscribers
 1. etc.
 
-With additiona features a prediction can be made on the 
+With additional features a prediction can be made on the 
 viewership of future streams.
