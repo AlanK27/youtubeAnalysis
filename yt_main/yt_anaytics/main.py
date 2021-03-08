@@ -11,9 +11,10 @@ from yt_anaytics.yt.yt_spider.vid_list_to_data import vid_to_data
 
 def start(user_id=None, chan_id=None, pages= None):
 
+    _path = os.path.abspath('..')
     check = 0
     while check == 0:
-        print('50 results/vidoes per page, max is 600 pages.')
+        print('50 vidoes/result per page, max is 600 reults. (1-12 pages)')
         pages = input('How many pages would you like?')
         if (pages.isnumeric()):
             if (int(pages) >=1) & (int(pages) < 12):
@@ -25,7 +26,7 @@ def start(user_id=None, chan_id=None, pages= None):
         else:
             print('Incorrect input')
 
-    with open(os.path.abspath('..')+'\\key.txt', 'r') as rf:
+    with open(os.path.join(_path, 'youtubeAnalysis', 'key.txt'), 'r') as rf:
         api_key = rf.read()
 
     yt_pi = yt_api(key = api_key)
