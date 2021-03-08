@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Youtube Channel Analysis with V3 API
 
 Gathering youtube data from V3 API
@@ -15,7 +13,16 @@ Download the requirements and start the program with py start.py in /yt_analytic
 Data folder will be created upon staring the script, that is where the data will be stored.
 Currently the channel is set to gathering data from live youtube streaming channel "Only in Japan".
 
+## Data Mining data with V3 API
 
+Data mining live streaming youtbe data.
+Multiple features can be drawn from the API such as:
+1. viwership
+1. location
+1. comment count
+1. video count
+1. subscribers
+1. etc.
 
 # Stream Youtube Channel Analysis
 
@@ -69,24 +76,3 @@ The correlation relations between the numeric features are shown above. From the
 Linear regression was used to predict viewer counts. Standard procedure with splitting training and test set, fitting the train set to the model and predicting the results against the test labels. The overall result was decent achieving R2 of 0.908. Lastly the plot between the predicted result and testing label forms a linear form demonstrating a good initial impression.
 
 <img src="/images/prediction.png" width="500" height="400">
-
-
-
-
-=======
-# Youtube Analysis
-
-## Data Mining data with V3 API
-
-Data mining live streaming youtbe data.
-Multiple features can be drawn from the API such as:
-1. viwership
-1. location
-1. comment count
-1. video count
-1. subscribers
-1. etc.
-
-With additional features a prediction can be made on the 
-viewership of future streams.
->>>>>>> 82a65580e5d4d4884f38139628a978eab93af991
